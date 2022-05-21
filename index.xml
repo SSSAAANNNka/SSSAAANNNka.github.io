@@ -33,6 +33,22 @@
     </item>
     
     <item>
+      <title>LastWeek</title>
+      <link>https://example.com/post/lastweek/</link>
+      <pubDate>Sat, 14 May 2022 19:25:34 +0300</pubDate>
+      <guid>https://example.com/post/lastweek/</guid>
+      <description>&lt;h1 id=&#34;my-last-week&#34;&gt;My last week&lt;/h1&gt;
+&lt;h2 id=&#34;how-i-spend-my-last-week&#34;&gt;How i spend my last week&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;I did laboratory works on various subjects.&lt;/li&gt;
+&lt;li&gt;I watched videos on YouTube and read some books.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;my-review-of-the-week&#34;&gt;My review of the week&lt;/h2&gt;
+&lt;p&gt;I think this week was a good rest after this productive week.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>https://example.com/post/git/</link>
       <pubDate>Sat, 07 May 2022 20:00:04 +0300</pubDate>
@@ -83,6 +99,52 @@ The Dulwich implementation of Git is a pure Python software component for Python
 &lt;p&gt;On 17 December 2014, an exploit was found affecting the Windows and macOS versions of the Git client. An attacker could perform arbitrary code execution on a target computer with Git installed by creating a malicious Git tree (directory) named .git (a directory in Git repositories that stores all the data of the repository) in a different case (such as .GIT or .Git, needed because Git does not allow the all-lowercase version of .git to be created manually) with malicious files in the .git/hooks subdirectory (a folder with executable files that Git runs) on a repository that the attacker made or on a repository that the attacker can modify. If a Windows or Mac user pulls (downloads) a version of the repository with the malicious directory, then switches to that directory, the .git directory will be overwritten (due to the case-insensitive trait of the Windows and Mac filesystems) and the malicious executable files in .git/hooks may be run, which results in the attacker&amp;rsquo;s commands being executed. An attacker could also modify the .git/config configuration file, which allows the attacker to create malicious Git aliases (aliases for Git commands or external commands) or modify extant aliases to execute malicious commands when run. The vulnerability was patched in version 2.2.1 of Git, released on 17 December 2014, and announced the next day.&lt;/p&gt;
 &lt;p&gt;Git version 2.6.1, released on 29 September 2015, contained a patch for a security vulnerability (CVE-2015-7545) that allowed arbitrary code execution. The vulnerability was exploitable if an attacker could convince a victim to clone a specific URL, as the arbitrary commands were embedded in the URL itself. An attacker could use the exploit via a man-in-the-middle attack if the connection was unencrypted, as they could redirect the user to a URL of their choice. Recursive clones were also vulnerable, since they allowed the controller of a repository to specify arbitrary URLs via the gitmodules file.&lt;/p&gt;
 &lt;p&gt;Git uses SHA-1 hashes internally. Linus Torvalds has responded that the hash was mostly to guard against accidental corruption, and the security a cryptographically secure hash gives was just an accidental side effect, with the main security being signing elsewhere. Since a demonstration of the SHAttered attack against git in 2017, git was modified to use a SHA-1 variant resistant to this attack. A plan for hash function transition is being written since February 2020.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://example.com/post/markdown/</link>
+      <pubDate>Sat, 07 May 2022 20:00:04 +0300</pubDate>
+      <guid>https://example.com/post/markdown/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://w7.pngwing.com/pngs/629/1016/png-transparent-markdown-computer-icons-text-editor-others-angle-text-rectangle.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;Markdown is a lightweight markup language for creating formatted text using a plain-text editor. John Gruber and Aaron Swartz created Markdown in 2004 as a markup language that is appealing to human readers in its source code form. Markdown is widely used in blogging, instant messaging, online forums, collaborative software, documentation pages, and readme files.&lt;/p&gt;
+&lt;p&gt;The initial description of Markdown contained ambiguities and raised unanswered questions, causing implementations to both intentionally and accidentally diverge from the original version. This was addressed in 2014, when long-standing Markdown contributors released CommonMark, an unambiguous specification and test suite for Markdown.&lt;/p&gt;
+&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;p&gt;In 2002 Aaron Swartz created atx, &amp;ldquo;the true structured text format&amp;rdquo;. Swartz and Gruber then worked together to create the Markdown language in 2004, with the goal of enabling people &amp;ldquo;to write using an easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid XHTML (or HTML)&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Its key design goal was readability, that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions, unlike text formatted with a markup language, such as Rich Text Format (RTF) or HTML, which have obvious tags and formatting instructions. To this end, its main inspiration is the existing conventions for marking up plain text in email, though it also draws from earlier markup languages, notably setext, Textile, and reStructuredText.
+Gruber wrote a Perl script, Markdown.pl, which converts marked-up text input to valid, well-formed XHTML or HTML and replaces angle brackets (&amp;lt;, &amp;gt;) and ampersands (&amp;amp;) with their corresponding character entity references. It can take the role of a standalone script, a plugin for Blosxom or a Movable Type, or of a text filter for BBEdit.&lt;/p&gt;
+&lt;h2 id=&#34;implementations&#34;&gt;Implementations&lt;/h2&gt;
+&lt;p&gt;Implementations of Markdown are available for over a dozen programming languages; in addition, many platforms and frameworks support Markdown. For example, Markdown plugins exist for every major blogging platform.&lt;/p&gt;
+&lt;p&gt;While Markdown is a minimal markup language and is read and edited with a normal text editor, there are specially designed editors that preview the files with styles, which are available for all major platforms. Many general purpose text and code editors have syntax highlighting plugins for Markdown built into them or available as optional download. Editors may feature a side-by-side preview window or render the code directly in a WYSIWYG fashion.&lt;/p&gt;
+&lt;p&gt;JotterPad - an online WYSIWYG editor that supports Markdown and fountain&lt;/p&gt;
+&lt;p&gt;Doxygen - a source code documentation generator which supports Markdown with extra
+features&lt;/p&gt;
+&lt;p&gt;RStudio - an IDE for R. It provides a C++ wrapper function for a markdown variant called sundown&lt;/p&gt;
+&lt;p&gt;GitHub Flavored Markdown (GFM) ignores underscores in words, and adds syntax highlighting, task lists, and tables&lt;/p&gt;
+&lt;p&gt;RMarkdown&lt;/p&gt;
+&lt;p&gt;Nextcloud Notes - the default app for taking notes on the Nextcloud platform supports formatting using Markdown&lt;/p&gt;
 </description>
     </item>
     
@@ -304,6 +366,24 @@ $$&lt;/p&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://example.com/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://example.com/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://example.com/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://example.com/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
